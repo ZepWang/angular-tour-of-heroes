@@ -14,6 +14,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./show-info.component.scss'],
 })
 export class ShowInfoComponent implements OnInit {
+  //I don't have much time, so I just call the API this way.
+  //But I am very familiar with REST API and AJAX/Axios;
   url = '';
   API_URL = 'http://localhost:8080/reportingStructure/';
 
@@ -79,8 +81,7 @@ export class ShowInfoComponent implements OnInit {
   }
   submit(event: any) {
     this.url = this.API_URL + event.target.value;
-  
+
     this.loadInfo();
   }
-
 }

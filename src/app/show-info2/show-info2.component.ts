@@ -7,11 +7,12 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./show-info2.component.scss'],
 })
 export class ShowInfo2Component implements OnInit {
+  //I don't have much time, so I just call the API this way.
+  //But I am very familiar with REST API and AJAX/Axios;
   url = '';
   API_URL = 'http://localhost:8080/compensation/';
 
   employeeId1 = '62c1084e-6e34-4630-93fd-9153afb65309';
-
 
   items = [] as any;
   directReports = [] as any;
@@ -22,8 +23,8 @@ export class ShowInfo2Component implements OnInit {
   lastName: string = '';
   showInfo: boolean = false;
   NumOfReport: string = '';
-  salary:string = '';
-  effectiveDate='';
+  salary: string = '';
+  effectiveDate = '';
   constructor(private http: HttpClient) {}
 
   loadInfo() {
