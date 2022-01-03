@@ -7,8 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./show-info2.component.scss'],
 })
 export class ShowInfo2Component implements OnInit {
-  //I don't have much time, so I just call the API this way.
-  //But I am very familiar with REST API and AJAX/Axios;
+  //I am familiar with REST API and AJAX/Axios;
   url = '';
   API_URL = 'http://localhost:8080/compensation/';
 
