@@ -1,0 +1,30 @@
+<div class="info-page">
+  <h1 style ="display:inline; margin:5px">Search for Compensation</h1>
+  <form class="formm"(change)="submit($event)" >
+    <input class="input-form"type="text" />
+    <button class="input-button"type="submit" >search</button>
+  </form>
+  <input type="button" value="Pete Best" (click)="showPerson1()" />
+
+  
+  <h2>department: {{ department }}</h2>
+  <h2>position: {{ position }}</h2>
+  <h2>firstName: {{ firstName }}</h2>
+  <h2>lastName: {{ lastName }}</h2>
+  <h2>Salary: {{ salary }}</h2>
+  <h2>EffectiveDate: {{ effectiveDate }}</h2>
+  <div *ngFor ="let report of directReports">
+    {{report.employeeId}}
+  </div>
+
+  <input type="button" value="Show Json" (click)="showJson()" />
+  <input type="button" value="hide Json" (click)="hideJson()" />
+  <div class="json" *ngIf="showInfo === false; else oldold">
+    <h1></h1>
+  </div>
+  <ng-template  #oldold>
+    <p class="json">{{ emplyeeInfo }}</p>
+  </ng-template>
+
+  <ul></ul>
+</div>

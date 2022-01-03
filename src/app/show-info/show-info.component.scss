@@ -1,0 +1,29 @@
+:host {
+  width: 100%;
+  white-space: initial;
+  word-wrap: break-word;
+}
+.json {
+  background-color:#cbcbd1a8;
+}
+.info-page {
+  margin-top:10px;
+  background-color: #fff;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow-y: scroll;
+  padding:20px;
+}
+.info-page::-webkit-scrollbar{
+  display:none;
+}
+.input-form{
+  height:20px;
+}
+.input-button{
+  height:26px;
+}
+.formm{
+  margin:0 0 2px 0;
+}
